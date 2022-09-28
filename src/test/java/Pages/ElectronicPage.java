@@ -38,7 +38,6 @@ public class ElectronicPage {
         driver.findElement(Checkout).click();
         driver.findElement(REgisterButton).click();
         driver.findElement(Gender).click();
-
+        System.out.println(Gender);
     }
 }
-

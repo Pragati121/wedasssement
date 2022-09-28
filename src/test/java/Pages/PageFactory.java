@@ -10,7 +10,7 @@ public class PageFactory
 
     private ElectronicPage electronics;
     private ElectronicPage electronicsUser;
-
+    private BookPage Book;
     WebDriver driver;
 
     public PageFactory(WebDriver driver)
@@ -54,5 +54,11 @@ public class PageFactory
         }
         return electronicsUser;
     }
+    public BookPage getBook() {
+        if (Book == null) {
+            Book= new BookPage(driver);
+        }
+        return Book;
     }
+}
 
